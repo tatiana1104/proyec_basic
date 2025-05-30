@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>freeCodeCamp Survery Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title" class="text-center">freeCodeCamp Survery Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <div class="form-group" >
+        <label id="name-label">Name <input id="name" name="name-label" type="text" required placeholder="Enter your name"class="form-control"/></label> </div>
+        <div class="form-group">
+        <label id="email-label">Email <input id="email" name="email" type="email" required placeholder="Enter your Email" class="form-control"/></label></div>
+        <div class="form-group">
+        <label id="number-label">Age (optional) <input id="number" name="number" type="number" min="18" max="100" required placeholder="Age" class="form-control"/></label> </div>
+        <div class="form-group">
+<label for="referrer">Which option best describes your current role?
+          <select id="dropdown" name="dropdown" class="form-control">
+          <option value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time job">Full Time Job</option>
+            <option value="full time learner">Full Time Learner</option>
+            <option value="prefer not to stay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <div>
+          <div class="form-group">
+<label for="referrer">Would you recommend freeCodeCamp to a friend? </label>
+<label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="input-radio" checked value="definitely"/> Definitely</label>
+<label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="input-radio" value="maybe"/> Maybe</label>
+<label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="not sure"/> Not sure</label>
+<div>
+  <div class="form-group">
+<label for="referrer">What is your favorite feature of freeCodeCamp?
+          <select id="referrer" name="referrer" class="form-control">
+            <option value="">Select an option</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open Source</option>
+          </select>
+        </label>
+</div>
+<div class="form-group">
+<label> What would you like to see improved? (Check all that apply) </label>
+
+
+<label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="front-end-projects" "input-checkbox"/> Front-end Projects</label>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="back-end-projects" "input-checkbox"/> Back-end Projects</label>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="Data-Visualization" "input-checkbox"/> Data Visualization</label>
+            <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="challenges" "input-checkbox"/> Challenges</label>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="open-source-community" "input-checkbox"/> Open Source Community</label>
+<label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="gitter-help-rooms" "input-checkbox"/> Gitter help rooms</label>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="videos" "input-checkbox"/> Videos</label>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="city-meetups" "input-checkbox"/> City Meetups</label>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="wiki" "input-checkbox"/> Wiki</label>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="forum" "input-checkbox"/> Forum</label>
+        <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="additional-courses" "input-checkbox"/> Additional Courses</label>
+        </div>
+      <div class="form-group"><label for="bio">Any comments or suggestions?
+          <textarea id="bio" name="bio" placeholder="Enter your comment here ..." class="input-textarea"></textarea>
+        </label>
+      </div>
+      <div class="form-group">
+      <input type="submit" value="Submit" id="submit" class="submit-button"/>
+    </form>
+  </body>
+</html>
